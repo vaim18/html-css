@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Matcha Cih', 'Blackburn';
+            src: url('../ex018/fontes/Matcha\ Cih/ Cih/Matcha\ Cih.otf') format("opentype"), url('../ex018/fontes/Matcha\ Cih/ Cih/Matcha\ Cih.ttf') format('opentype'), url('../ex018/fontes/Blackburn/Blackburn\ Free.otf') format('opentype'), url('../ex018/fontes/Blackburn/Blackburn\ Free.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - TrueType (.ttf)
+                - OpenType (.otf)
+                - Web Open Font Format (.woff)
+                - Web Open Font Format 2.0 (.woff2)
+                - Embedded OpenType (.eot)
+                - Scalable Vector Graphics (.svg)
+                - Bitmap (.bmp)
+                - Embedded Bitmap (.eot)
+                - TrueType Collection (.ttc)
+                - Font Squirrel (.sfnt)
+                - PostScript Type 1 (.pfb, .pfm)
+                - Multiple Master (.mm)
+                - Apple Advanced Typography (.dfont)
+            */
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            font-style: normal;
+        }
+            /**/
+        h1 {
+            font-family: 'Matcha Cih', 'Blackburn', cursive;
+            font-size: 3em; /* 1em = 16px, 2em = 32px, 0.5em = 8px */
+            font-weight: normal; /* normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi culpa accusamus, unde facilis repudiandae a fugit quis reiciendis, recusandae beatae ut obcaecati quibusdam modi cumque, dolore voluptatum officiis minima consectetur!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus unde cumque repellendus molestias nesciunt deleniti sapiente, dolores odit nostrum error nemo ut voluptate laudantium at illum minima odio sint culpa.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fuga impedit eum, pariatur nihil, omnis, culpa quidem iste modi saepe quia quam consequatur. Optio, reprehenderit perspiciatis cumque minus adipisci molestiae?
+    </p>
+</body>
+</html>

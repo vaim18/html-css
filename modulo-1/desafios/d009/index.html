@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Meus Vídeos</title>
+    
+    <style>
+    /* Container principal precisa ser relativo */
+    .video-container {
+        position: relative;
+        width: 560px; /* Largura do vídeo */
+        height: 315px; /* Altura do vídeo */
+        cursor: pointer;
+    }
+
+    /* Iframe fica atrás */
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+        pointer-events: none; /* Ignora cliques para o iframe */
+    }
+
+    /* Div invisível que recebe o clique */
+    .click-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0); /* Transparente */
+        z-index: 10; /* Fica acima do iframe */
+    }
+    </style>
+    
+</head>
+<body>
+    <h1>Vídeos Legais Para Assistir</h1>
+    <p>Bem-vindo ao meu site de vídeos! Aqui você encontrará uma coleção dos meus vídeos favoritos. Aproveite! 
+    </p>
+    <br>
+    <br>
+    <div class="video-container" onclick="window.open('https://player.vimeo.com/video/439415125?h=011183bc62', '_blank')">
+        <div class="video-overlay"></div>
+        <iframe 
+            title="vimeo-player" 
+            src="https://player.vimeo.com/video/439415125?h=011183bc62" 
+            width="640" 
+            height="360" 
+            frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen>
+        </iframe>
+    </div>
+    <div class="video-container" onclick="window.open('https://player.vimeo.com/video/476388424?h=8a825bd1c5', '_blank')">
+        <div class="video-overlay"></div>
+        <iframe 
+            title="vimeo-player" 
+            src="https://player.vimeo.com/video/476388424?h=8a825bd1c5" 
+            width="640" 
+            height="360" 
+            frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen>
+        </iframe>
+    </div>
+    <div class="video-container" onclick="window.open('https://player.vimeo.com/video/746816277?h=e9fb942dec', '_blank')">
+        <div class="video-overlay"></div>
+        <iframe 
+            title="vimeo-player" 
+            src="https://player.vimeo.com/video/746816277?h=e9fb942dec" 
+            width="640" 
+            height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen>
+        </iframe>
+    </div>
+    <div class="video-container" onclick="window.open('https://player.vimeo.com/video/476400777?h=746ff9f48c', '_blank')">
+        <div class="video-overlay"></div>
+        <iframe 
+            title="vimeo-player" 
+            src="https://player.vimeo.com/video/476400777?h=746ff9f48c" 
+            width="640" 
+            height="360" 
+            frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen>
+        </iframe>
+    </div>
+     <div class="video-container" onclick="window.open('https://player.vimeo.com/video/304046264?h=da5b18e5b4', '_blank')">
+        <div class="video-overlay"></div>
+        <iframe 
+            title="vimeo-player" 
+            src="https://player.vimeo.com/video/304046264?h=da5b18e5b4" 
+            width="640" 
+            height="360" 
+            frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen>
+        </iframe>
+    </div>
+</body>
+</html>

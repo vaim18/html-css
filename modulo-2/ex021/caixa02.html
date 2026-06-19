@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: dimgray;
+        }
+
+        header {
+            padding: 20px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+
+        nav ul {
+            background-color: rgb(102, 102, 102);
+            list-style-type: none;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        article > aside {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            margin: 4px;
+            color: white;
+        }
+
+        footer p {
+            margin: 0px;
+        }
+
+        div#bola {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h1>Exemplo de argument de tags</h1>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque labore consectetur, placeat voluptatem amet natus voluptas qui minima aperiam eum odit, quae optio quidem, distinctio dolorem mollitia ducimus vero!</p>
+                    <aside>
+                        <h3>Informação adicional</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae vitae doloremque quas architecto molestiae error laborum minus eveniet mollitia sit hic, dicta quae doloribus ipsa explicabo illum voluptate fuga.</p>
+                    </aside>
+            </article>
+            <article>
+                <h2>Notícia 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sunt, perferendis voluptatum sed voluptates sint, facere officia sapiente pariatur quia eos. Cumque tenetur dolores soluta libero sed. Animi, quam harum?</p>
+                <aside>
+                    <h3>Informação adicional</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae vitae doloremque quas architecto molestiae error laborum minus eveniet mollitia sit hic, dicta quae doloribus ipsa explicabo illum voluptate fuga.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2026</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

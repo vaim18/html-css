@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex010/d005/imagens/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos para ver a imagem mudar conforme o tamanho da tela.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+
+    <audio src="media/Back To The Start - Patrick Jordan Patrikios.mp3" controls autoplay>
+    </audio>
+    <!--MP3 WAV OGG-->
+    <br>
+    <audio controls loop preload="metadata" >
+        <source src="media/02 Need You.m4p" type="audio/mp4">
+    </audio>
+    <p>Seu navegador não suporta áudio mp4 em HTML5.</p>
+
+</body>
+</html>

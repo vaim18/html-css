@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS </title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            /*
+            Medidas Absolutas: São aquelas que não se adaptam a tela, ou seja, tem um tamanho fixo. Exemplo: 
+            px, cm, mm, in, pt, pc.
+
+            Medidas Relativas: São aquelas que se adaptam a tela, ou seja, tem um tamanho relativo. Exemplo:
+            em, ex, rem, vw, vh, vmin, vmax, %.
+            */
+            font-size: 1em; /* 1em = 16px, 2em = 32px, 0.5em = 8px */
+            font-weight: 400; /* normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900 */
+            font-style: normal; /* normal, italic, oblique */
+            text-decoration: none; /* none, underline, overline, line-through */
+            
+            /*  weight = PESO (lighter, normal, bold, bolder)
+                style = ESTILO (normal, italic, oblique)
+                decoration = DECORAÇÃO (underline, overline, line-through)
+                width = LARGURA 
+                height = ALTURA
+             */
+        }
+
+        h1 {
+            /* shorthand font
+            - font-style -> font-weigh -> font-size -> font-family 
+             
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'Work Sans', sans-serif; 
+             */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font:bold 2em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aliquam necessitatibus iusto aperiam quam quisquam eius ab officia, minus quaerat ipsa placeat cupiditate nam expedita voluptas quidem dicta officiis delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, non veniam ipsa atque explicabo molestiae ut facere dolores, autem laudantium debitis amet! Dolorum officiis ipsa asperiores minima maiores. Numquam, pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, nam reprehenderit cumque obcaecati voluptate est, quis odio tempore ducimus facere omnis. Sint rerum optio similique. Minus hic aliquam quisquam ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aut iste iure saepe earum modi magni eveniet ipsam ea mollitia. Assumenda explicabo consequuntur quos sapiente veritatis aliquid totam alias aut.e</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, repellat aliquam? Suscipit nesciunt debitis error itaque eum quam accusantium incidunt reiciendis commodi, nihil laudantium hic temporibus veniam dolore, dignissimos earum.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sint quisquam asperiores et inventore voluptatum maiores rerum sit tempora, quod omnis ipsa nostrum commodi? Nulla quisquam corporis tempore aspernatur optio.</p>
+</body>
+</html>

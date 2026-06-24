@@ -3,15 +3,28 @@
     Folha de estilo index.html
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+:root { /* Configurar Variáveis */
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+    --fonte4: 'Passions Conflict', cursive;
+}
 * { /* Configurações Gerais */
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh; /* Tamanho mínimo altura da View Port */
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -24,6 +37,8 @@ header > h1 {
     padding-top: 50px;
     /* text-transform: uppercase; - todas as letras ficam maiúsculas e iguais */
     font-variant: small-caps; /* Todas as letas ficam maiúsculas, mas somente as iniciais ficam maiores */
+    font-family: var(--fonte2);
+    font-size: 10vw; /* 10% da largura da tela */
 }
 
 header > p {
@@ -45,6 +60,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /* espaço entre as linhas */
     padding-left: 30px; /* Jogar o conteúdo para dentro */
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -53,7 +70,8 @@ section.normal {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block; /* transforma a caixa para se adaptar ao tamanho do conteúdo */
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 

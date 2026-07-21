@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Todas as demais midias */
+
+/* Typical Device Breakpoints - W3C 
+-----------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px 
+*/
+
+@media screen and (min-width: 768px) { /* Pequenas telas e celulares irão mostrar o menu hamburger */
+    .material-symbols-outlined {
+        display: none; /* Esconde o menu em tela pequena pra ele aparecer depois */ 
+    }
+    
+    menu {
+        display: block; /* Organiza o menu em bloco */ 
+    }
+
+    menu > ul >li {
+        display: inline-block; /* Esconde e aparece o menu ao mudar de tela pequena para tela grande */
+    }
+
+    main {
+        width: 768px; /* Largura mínima para telas grandes para facilitar a leitura e usabilidade */
+    }
+
+}

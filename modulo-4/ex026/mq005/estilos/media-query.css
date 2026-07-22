@@ -20,7 +20,7 @@ Grandes telas: acima de 1200px
         display: block; /* Organiza o menu em bloco */ 
     }
 
-    menu > ul >li {
+    menu > ul > li {
         display: inline-block; /* Esconde e aparece o menu ao mudar de tela pequena para tela grande */
     }
 

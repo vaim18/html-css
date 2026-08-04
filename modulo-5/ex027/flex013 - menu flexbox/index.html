@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dehaze" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">dehaze</span>
+        <nav id="itens">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de Flexbox</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nemo consequatur deleniti debitis facilis accusamus velit totam esse voluptatum iure, et perspiciatis ipsum quae! Est dolor eius nihil iusto praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quas consectetur perferendis quis dicta hic, incidunt quos quasi porro placeat fugit magnam, debitis, eligendi aliquid? Quidem perspiciatis ex ad atque.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi voluptatibus ipsum autem nam consequuntur minus consectetur quos deserunt, reiciendis dolorem facere corporis incidunt obcaecati tenetur. Autem fugiat doloribus odit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis tenetur culpa eligendi consequuntur officia ullam dolore sed cupiditate! Voluptatum quasi suscipit dolore provident adipisci magni quo. Dolores veniam qui minima?</p>
+    </main>
+    <script>
+
+        function mudouTamanho() {
+            if(window.innerWidth >= 580) {
+                itens.style.display = 'flex'
+            } else {
+                itens.style.display = 'none' 
+            }
+        }
+
+        function clickMenu() {
+            if(itens.style.display == 'flex') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'flex'
+            }
+
+        }
+
+    </script>
+</body>
+</html>

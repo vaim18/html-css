@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > nav > a {
+    width: 90vw;
+}
+
+@media screen and (min-width: 580px) {
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    header > nav {
+        display: block;
+    } 
+
+    header > nav > a {
+        display: inline-block;
+    }
+
+    main {
+        width: 580px;
+    }
+}
+
+

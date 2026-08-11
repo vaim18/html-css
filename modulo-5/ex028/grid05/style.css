@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Folha de estilo grid04 index.html */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px
+    ;
+    border: green dashed;
+}
+
+.caixa1 {
+    background-color: red;
+    border: dotted;
+
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+}
+
+.caixa2 {
+    background-color: blue;
+    border: dotted;
+
+    grid-row: 2 / -1;
+    grid-column: 1 / span 2;
+}
+
+.caixa3 {
+    background-color: green;
+    border: dotted;
+
+    grid-row: 2 / -1;
+    grid-column: 3 / -1;
+}
